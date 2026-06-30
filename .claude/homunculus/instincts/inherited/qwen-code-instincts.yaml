@@ -1,0 +1,320 @@
+# Instincts generated from https://github.com/EmiyaKiritsugu3/qwen-code
+# Generated: 2026-06-30T00:25:50.534Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: qwen-code-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: chore
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: chore(deps): bump the npm_and_yarn group across 5 directories with 20 updates
+
+---
+id: qwen-code-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Commit Length
+
+## Action
+
+Write moderate-length commit messages (~77 characters)
+
+## Evidence
+
+- Average commit message length: 77 chars
+- Based on 1 commits
+
+---
+id: qwen-code-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: qwen-code-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: qwen-code-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: qwen-code-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: qwen-code-instinct-camelcase-files
+trigger: "When creating or renaming a file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Instinct Camelcase Files
+
+## Action
+
+Use camelCase for the file name
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: qwen-code-instinct-camelcase-functions
+trigger: "When defining a function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Instinct Camelcase Functions
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: qwen-code-instinct-pascalcase-classes
+trigger: "When defining a class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Instinct Pascalcase Classes
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: qwen-code-instinct-screaming-constants
+trigger: "When declaring a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Instinct Screaming Constants
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: qwen-code-instinct-relative-imports
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Instinct Relative Imports
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: qwen-code-instinct-named-exports
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Instinct Named Exports
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: qwen-code-instinct-conventional-commits-chore
+trigger: "When committing dependency or maintenance changes"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Instinct Conventional Commits Chore
+
+## Action
+
+Prefix the commit message with 'chore' following Conventional Commits
+
+## Evidence
+
+- Seen in commit: chore(deps): bump the npm_and_yarn group...
+- Pattern in commits.prefixes
+
+---
+id: qwen-code-instinct-conventional-commits-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Instinct Conventional Commits Format
+
+## Action
+
+Use the Conventional Commits format: <type>(<scope>): <description>
+
+## Evidence
+
+- Pattern in commits.type
+- Seen in commit: chore(deps): bump the npm_and_yarn group...
+
+---
+id: qwen-code-instinct-monorepo-packages
+trigger: "When adding a new module or package"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Instinct Monorepo Packages
+
+## Action
+
+Place it under the 'packages' directory
+
+## Evidence
+
+- Pattern in folderStructure.commonFolders
+- Pattern in configFiles
+
+---
+id: qwen-code-instinct-separate-tests
+trigger: "When creating tests for a module"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: EmiyaKiritsugu3/qwen-code
+---
+
+# Qwen Code Instinct Separate Tests
+
+## Action
+
+Place test files in a separate location from source files
+
+## Evidence
+
+- Pattern in folderStructure.testLocation
+
